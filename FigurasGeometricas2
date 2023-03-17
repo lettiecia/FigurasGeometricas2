@@ -1,0 +1,61 @@
+package figurasgeometricas1;
+
+import javax.swing.JOptionPane;
+
+public class Figuras {
+    double area;
+ 
+    public void areacirculo (double radio) (
+area= ((3.1416)* (radio*radio));
+JOptionPane. showMessageDialog ( cmpnt: null, "El area del circulo es: " + area);
+}
+public void areacuadrado (double lado) {
+area= lado*lado;
+JOptionPane. showMessageDialog ( capnt: null, "El area del cuadrado es: " + area);
+}
+public void areatriangulo (double base, double altura) (
+area= (base altura)/2;
+JOptionPane. showMessageDialog ( cmpnt: null, "El area del triangulo es: " + area);
+}
+public void arearectangulo (double ancho, double largo) (area= ancho* largo; JOptionPane. showMessageDialog ( capnt: null, "El area del rectangulo es: " + area);
+}
+public void areaesfera (double radio2) {
+area= ((4*3.1416)* (radio2*radio2));
+JOptionPane. showMessageDialog ( capnt: null, "El area de la esfera es:" area: );
+}
+public void areacubo (double arista) (
+area= (6* (arista arista));
+JOptionPane. showMessageDialog ( capnt: null, "El area del cubo es: " + area);
+
+package figurasgeometricas1;
+
+//import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Datos {
+  
+static double radio, lado, base, altura, ancho, largo, radio2, arista;
+
+public void Figuras () {
+    
+
+Figuras dat = new Figuras ();
+
+radio = Double.parseDouble (string: JOptionPane. showInputDialog ( o: "Introduce el radio del circulo: "));
+lado = Double.parseDouble(string:JOptionPane.showInputDialog(°:"Introduceelladodelcuadrado:"));
+base = Double.parseDouble(»tring:JOptionPane.showInputDialog(o:"Introduce la base del triangulo: "));
+altura = Double.parseDouble ( »tring: JOptionPane. showInputDialog ( o: "Introduce La altura del triangulo: "));
+ancho = Double.parseDouble ( »tring: JOptionPane. showInputDialog ( o: "Introduce el ancho del rectangulo: "));
+largo = Double.parseDouble (string: JOptionPane. showInputDialog ( o: "Introduce el largo del rectangulo: "));
+radio2= Double.parseDouble(string:JOptionPane.showInputDialog(o:"Introduceelradiodelacircunferencia:"));
+arista = Double.parseDouble ( string: JOptionPane. showInputDialog ( o: "Introduce la medida de la arista del cubo: "));
+
+
+dat.areacirculo (radio);
+dat.areacuadrado (lado);
+dat.areatriangulo (base, altura); dat.arearectangulo (ancho, largo);
+dat.areaesfera (radio2)
+dat. areacubo (arista);
+
+}
+}
